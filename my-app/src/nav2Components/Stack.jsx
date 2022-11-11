@@ -11,7 +11,7 @@ import { BellIcon, EmailIcon, TriangleDownIcon } from '@chakra-ui/icons'
 
 const Stackit2 = ({ data }) => {
   return (
-    <HStack h="80px" spacing="25px">
+    <HStack h="80px" spacing="35px">
       <Box paddingLeft="20px" w="12%" h="40px">
         <Image
           src="https://mms.businesswire.com/media/20200909005347/en/819490/5/Fiverr_Logo_GreenGreen_RGB.jpg"
@@ -19,7 +19,7 @@ const Stackit2 = ({ data }) => {
           h="100%"
         />
       </Box>
-      <Box w="60%" h="40px">
+      <Box w="55%" h="40px">
         <Input
           fontWeight="semibold"
           lineHeight="24px"
@@ -27,25 +27,25 @@ const Stackit2 = ({ data }) => {
           fontSize="17px"
           color="#62646a"
           textDecoration="none"
-          h="100%"
+          h="50px"
           placeholder="What service are you looking today?"
         />
       </Box>
       <Box w="70px" h="40px">
-        <BellIcon />
+        <BellIcon h="40px" w="40px" />
       </Box>
       <Box w="70px" h="40px">
-        <EmailIcon />
+        <EmailIcon h="40px" w="40px" />
       </Box>
       <Box w="70px" h="40px">
-        <TriangleDownIcon />
+        <TriangleDownIcon h="40px" w="40px" />
       </Box>
       <Box w="70px" h="40px">
         <Text
           fontWeight="semibold"
           lineHeight="24px"
           fontFamily="400 16px/24px Macan,Helvetica Neue,Helvetica,Arial,sans-serif"
-          fontSize="17px"
+          fontSize="22px"
           color="#62646a"
           textDecoration="none"
         >
@@ -66,7 +66,7 @@ const Stackit2 = ({ data }) => {
           fontSize="25px"
           color="white"
           textDecoration="none"
-          paddingTop="10px"
+          paddingTop="5px"
         >
           V
         </Text>
