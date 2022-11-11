@@ -1,35 +1,37 @@
 import logo from './logo.svg'
 import './App.css'
-import {
-  Menu,
-  Button,
-  ChevronDownIcon,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-  color,
-} from '@chakra-ui/react'
+import Stackit from './navComponents/Stack'
+import Stackit2 from './nav2Components/Stack'
+import { Stack, HStack, VStack, Box, StackDivider } from '@chakra-ui/react'
+
+const data = [
+  { title: 'Graphics & Design' },
+  { title: 'Digital Marketing' },
+  { title: 'Writing & Translation' },
+  { title: 'Video & Animation' },
+  { title: 'Music & Audio' },
+  { title: 'Programming & Tech' },
+  { title: 'Business' },
+  { title: 'Lifestyle' },
+  { title: 'Trending' },
+]
 
 function App() {
-  const action = () => {
-    console.log('YOU HAVE HOVERED ME')
-  }
   return (
     <div className="App">
-      <Menu>
-        <MenuButton as={Button}>Actions</MenuButton>
-        <MenuList>
-          <MenuItem>Download</MenuItem>
-          <MenuItem>Create a Copy</MenuItem>
-          <MenuItem>Mark as Draft</MenuItem>
-          <MenuItem>Delete</MenuItem>
-          <MenuItem>Attend a Workshop</MenuItem>
-        </MenuList>
-      </Menu>
+      <VStack
+        divider={<StackDivider borderColor="gray.200" />}
+        spacing={5}
+        align="stretch"
+      >
+        <Box h="70px">
+          <Stackit2 />
+        </Box>
+        <Box h="40px">
+          <Stackit data={data} />
+        </Box>
+        <StackDivider borderColor="gray.200" />
+      </VStack>
     </div>
   )
 }
