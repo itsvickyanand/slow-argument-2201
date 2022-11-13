@@ -3,6 +3,8 @@ import './App.css'
 import Stackit from './navComponents/Stack'
 import Stackit2 from './nav2Components/Stack'
 import { Stack, HStack, VStack, Box, StackDivider } from '@chakra-ui/react'
+import Dabba from './boxes/Dabba'
+import Tableit from './footer/Footer'
 
 const data = [
   { title: 'Graphics & Design' },
@@ -32,6 +34,8 @@ function App() {
         </Box>
         <StackDivider borderColor="gray.200" />
       </VStack>
+      <Dabba />
+      <Tableit />
     </div>
   )
 }
