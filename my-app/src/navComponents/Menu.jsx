@@ -27,11 +27,19 @@ const Menuit = ({ data }) => {
         </Text>
       </MenuButton>
       <MenuList>
-        <MenuItem></MenuItem>
+        <MenuItem>web development</MenuItem>
         <MenuItem>Digital Marketing</MenuItem>
         <MenuItem>Mark as Draft</MenuItem>
         <MenuItem>Delete</MenuItem>
         <MenuItem>Attend a Workshop</MenuItem>
+        <MenuItem>web development</MenuItem>
+        <MenuItem>Digital Marketing</MenuItem>
+        <MenuItem>Mark as Draft</MenuItem>
+        <MenuItem>Delete</MenuItem>
+        <MenuItem>Attend a Workshop</MenuItem>
+        <MenuItem>web development</MenuItem>
+        <MenuItem>Digital Marketing</MenuItem>
+        <MenuItem>Mark as Draft</MenuItem>
       </MenuList>
     </Menu>
   )
